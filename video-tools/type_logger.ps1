@@ -1,7 +1,8 @@
 # VolleyBand - types the laptop logger into VS Code for filming.
 #
 # 1. Double-click VolleyBand_film.code-workspace in this folder. It opens VS Code
-#    with auto-brackets and pop-ups switched off, so the typing comes out clean.
+#    with auto-indent, auto-brackets and pop-ups switched off. This step matters:
+#    the script types its own indentation, so VS Code must not add any.
 # 2. File > New File, save it as logger_demo.py. Make the window big.
 # 3. In PowerShell run:
 #    powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE\OneDrive\Desktop\VolleyBand_Bluetooth\film\type_logger.ps1"
@@ -161,9 +162,6 @@ for ($n = 0; $n -lt $lines.Count; $n++) {
     if ($n -gt 0) {
         Start-Sleep -Milliseconds ([int]((180 + $rand.Next(280)) * $Speed))
         Key "{ENTER}"
-        # wipe any indentation the editor added, then type our own
-        Key "{HOME}"; Key "+{END}"
-        if ($t.Length -eq 0) { Key "{DEL}" }
     }
     if ($t.Length -gt 0) { TypeText $t }
 }
