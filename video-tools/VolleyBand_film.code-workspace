@@ -1,0 +1,29 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "editor.autoClosingBrackets": "never",
+    "editor.autoClosingQuotes": "never",
+    "editor.autoClosingOvertype": "never",
+    "editor.autoSurround": "never",
+    "editor.autoIndent": "none",
+    "editor.formatOnType": false,
+    "editor.quickSuggestions": {
+      "other": "off",
+      "comments": "off",
+      "strings": "off"
+    },
+    "editor.suggestOnTriggerCharacters": false,
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.wordBasedSuggestions": "off",
+    "editor.parameterHints.enabled": false,
+    "editor.inlineSuggest.enabled": false,
+    "python.analysis.autoIndent": false,
+    "github.copilot.enable": {
+      "*": false
+    }
+  }
+}
